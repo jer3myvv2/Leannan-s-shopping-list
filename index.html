@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leannan's Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="show-splash">
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1>Leannan's Shopping List</h1>
+            <h2 class="retro-title">The 90's Shopping List</h2>
+            <button id="enter-btn">   ENTER    </button>
+        </div>
+    </div> 
+
+<nav>
+        <div class="logo"> 90's SHL </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Options</a></li>
+            <li><a href="#" class="active">Shop</a></li>
+        </ul>
+        
+        <form class="search-bar"
+         action="javascript:void(0);" method="GET">
+            <input type="text" placeholder="Searchitems..." name="search" id="myInput"onkeyup="filterItems()">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container">
+
+        <center><h2> My Shopping items</h2></center>
+        <ul id="itemList">
+            <li><span class="Item-name">Bread</span><button class="delete-btn"> Delete</button></li>
+            <li><span class="item-name">Neon Fanny Pack</span><button class="delete-btn"> Delete</button></li>
+            <li><span class="item-name">Retro sneakers</span><button class="delete-btn"> Delete</button></li>
+            <li><span class="item-name">flooedies</span><button class="delete-btn"> Delete</button></li>
+        </ul>
+    <div class="add-item-controls">
+        <input type="text" id="newItemInput" placeholder="Add new item...">
+        <button id="addItemBtn">Add Item</button>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
