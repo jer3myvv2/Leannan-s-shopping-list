@@ -56,3 +56,36 @@ searchInput.addEventListener('input', (event)=>{
         }
     });
 });
+
+const approved90sItems=['tamagotchi',
+    'walkman',
+    'retro sneakers',
+    'nokia 3310',
+    'beanie babies',
+    'fanny pack',
+    'slap bracelets',
+    'dunkaroos',
+    'floppy disk',
+    'furby',
+    'choker'
+];
+
+function addItem(){
+    const inputField=document.getElementById('itemInput');
+    const newItem=inputField.value.trim();
+    if(approved90sItems.includes(newItem)){
+        console.log("Wagwan! Adding item:", newItem);
+        createListItem(newItem);
+      }else{
+        alert("Ugh, that's not a 90s item! Please enter something from the 90s.");
+      }
+    inputField.value="";
+}
+
+const is90s=approved90sItems.some(keyword=>newItem.includes(keyword));
+if(is90s){
+    console.log("Wagwan! Adding item:", newItem);
+    createListItem(newItem);
+}else{
+    alert("Ugh, that's not a 90s item! Please enter something from the 90s.");
+}
